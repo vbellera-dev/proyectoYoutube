@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="https://www.youtube.com/s/desktop/32c4e480/img/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.youtube.com/s/desktop/32c4e480/img/favicon_48x48.png" sizes="48x48">
+    <link rel="icon" href="https://www.youtube.com/s/desktop/32c4e480/img/favicon_96x96.png" sizes="96x96">
+    <link rel="icon" href="https://www.youtube.com/s/desktop/32c4e480/img/favicon_144x144.png" sizes="144x144">
+
+    <title>YouTube</title>
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav>
+
+        <!-- Grupo Izquierda -->
+        <div id="grupo-izquierda" class="grupo-nav">
+            <!-- Burger Menu -->
+            <div id="burger" class="boton-circular">
+                <a href="">
+                    <img src="iconos/burger-removebg-preview.png" alt="Menu">
+                </a>
+            </div>
+            <!-- Logo -->
+            <div id="iconoYoutube">
+                <a href="" title="Página de inicio de Youtube"><img src="iconos/youtubeIcon.png" alt="Logo"></a>
+            </div>
+        </div>
+
+
+        <!-- Grupo Centro -->
+        <div id="grupo-centro" class="grupo-nav">
+
+            <div id="barra-busqueda">
+                <div id="pre-buscador">
+                    <img src="iconos/lupa.png" alt="">
+                </div>
+                <!-- Buscador-->
+                <div id="buscador">
+                    <input id="input-text" type="text" placeholder="Buscar">
+                </div>
+
+                <div id="post-buscador" class="tooltip">
+                    <span class="tooltiptext">Buscar</span>
+                    <a href=""><img src="iconos/lupa.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Buscador de voz-->
+            <div id='microfono' class="boton-circular tooltip">
+                <span class="tooltiptext">Búsqueda por voz</span>
+                <a href="">
+                    <img src="iconos/microfono.png" alt="Microfono">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Grupo Derecha -->
+        <div id="grupo-derecha" class="grupo-nav">
+            <!-- Crea tu Video -->
+            <div class="boton-circular tooltip">
+                <span class="tooltiptext">Crear videos</span>
+                <a href="">
+                    <img src="iconos/creaTuVideo.png" alt="Crea tu video">
+                </a>
+            </div>
+            <!-- Notificaciones -->
+            <div class="boton-circular tooltip">
+                <span class="tooltiptext">Notificaciones</span>
+                <a href="">
+                    <img src="iconos/noitificaciones.png" alt="Notificaciones">
+                </a>
+            </div>
+            <!-- Perfil -->
+            <div id="perfilUsuario" class="boton-circular">
+                <a href=""><img src="iconos/perfiles/Vicus Profile.jpg" alt="Perfil de usuario"></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Barra Lateral -->
+    <aside>
+        <a href="" title="Inicio">
+            <div class="boton-lateral activo">
+                <img src="iconos/home.png" alt="Inicio">
+                <p>Inicio</p>
+            </div>
+
+            <a href="" title="Shorts">
+                <div class="boton-lateral">
+                    <img src="iconos/shorts.png" alt="Shorts">
+                    <p>Shorts</p>
+                </div>
+
+                <a href="" title="Suscripciones">
+                    <div class="boton-lateral">
+                        <img src="iconos/suscripciones.png" alt="Suscripciones">
+                        <p>Suscripciones</p>
+                    </div>
+                </a>
+
+                <div>
+                    <hr>
+                </div>
+
+                <a href="" title="Mi biblioteca">
+                    <div class="boton-lateral">
+                        <img src="iconos/biblioteca.png" alt="Mi biblioteca">
+                        <p>Mi biblioteca</p>
+                    </div>
+                </a>
+
+                <a href="" title="Historial">
+                    <div class="boton-lateral">
+                        <img src="iconos/historial.png" alt="Historial">
+                        <p>Historial</p>
+                    </div>
+                </a>
+
+                <a href="" title="Mis vídeos">
+                    <div class="boton-lateral">
+                        <img src="iconos/misVideos.png" alt="Mis vídeos">
+                        <p>Mis vídeos</p>
+                    </div>
+                </a>
+
+                <a href="" title="Ver más tarde">
+                    <div class="boton-lateral">
+                        <img src="iconos/verMasTarde.png" alt="Ver más tarde">
+                        <p>Ver más tarde</p>
+                    </div>
+                </a>
+
+                <a href="" title="Vídeos que me gustan">
+                    <div class="boton-lateral">
+                        <img src="iconos/videosQueMeGustan.png" alt="Vídeos que me gustan">
+                        <p>Vídeos que me gustan</p>
+                    </div>
+                </a>
+
+                <a href="" title="Mostrar más">
+                    <div class="boton-lateral">
+                        <img src="iconos/mostrarMas.png" alt="Mostrar más">
+                        <p>Mostrar más</p>
+                    </div>
+                </a>
+
+                <div>
+                    <hr>
+                </div>
+
+                <h3>Suscripciones</h3>
+
+                <a href="https://www.youtube.com/@mrjoewebb" title="Joe Webb">
+                    <div class="boton-lateral">
+                        <img src="iconos/perfiles/canal1.png" alt="Joe Webb">
+                        <p>Joe Webb</p>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@mrjoewebb" title="Joe Webb">
+                    <div class="boton-lateral">
+                        <img src="iconos/perfiles/canal1.png" alt="Joe Webb">
+                        <p>Joe Webb</p>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@mrjoewebb" title="Joe Webb">
+                    <div class="boton-lateral">
+                        <img src="iconos/perfiles/canal1.png" alt="Joe Webb">
+                        <p>Joe Webb</p>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@mrjoewebb" title="Joe Webb">
+                    <div class="boton-lateral">
+                        <img src="iconos/perfiles/canal1.png" alt="Joe Webb">
+                        <p>Joe Webb</p>
+                    </div>
+                </a>
+
+                <div>
+                    <hr>
+                </div>
+
+                <h3>Explorar</h3>
+
+                <a href="" title="Tendencias">
+                    <div class="boton-lateral">
+                        <img src="iconos/tendencias.png" alt="Tendencias">
+                        <p>Tendencias</p>
+                    </div>
+                </a>
+
+                <a href="" title="Música">
+                    <div class="boton-lateral">
+                        <img src="iconos/musica.png" alt="Música">
+                        <p>Música</p>
+                    </div>
+                </a>
+
+                <a href="" title="Videojuegos">
+                    <div class="boton-lateral">
+                        <img src="iconos/videojuegos.png" alt="Videojuegos">
+                        <p>Videojuegos</p>
+                    </div>
+                </a>
+
+                <a href="" title="Deportes">
+                    <div class="boton-lateral">
+                        <img src="iconos/deportes.png" alt="Deportes">
+                        <p>Deportes</p>
+                    </div>
+                </a>
+
+                <a href="" title="Aprendizaje">
+                    <div class="boton-lateral">
+                        <img src="iconos/aprendizaje.png" alt="Aprendizaje">
+                        <p>Aprendizaje</p>
+                    </div>
+                </a>
+
+                <div>
+                    <hr>
+                </div>
+
+                <h3>Más de Youtube</h3>
+
+                <a href="" title="Youtube Premium">
+                    <div class="boton-lateral">
+                        <img src="iconos/youtubePremium.png" alt="Youtube Premium">
+                        <p>Youtube Premium</p>
+                    </div>
+                </a>
+
+                <a href="" title="Creator Studio">
+                    <div class="boton-lateral">
+                        <img src="iconos/creatorStudio.png" alt="Creator Studio">
+                        <p>Creator Studio</p>
+                    </div>
+                </a>
+
+                <a href="" title="Youtube Music">
+                    <div class="boton-lateral">
+                        <img src="iconos/youtubeMusic.png" alt="Youtube Music">
+                        <p>Youtube Music</p>
+                    </div>
+                </a>
+
+                <a href="" title="Youtube Kids">
+                    <div class="boton-lateral">
+                        <img src="iconos/youtubeKids.png" alt="Youtube Kids">
+                        <p>Youtube Kids</p>
+                    </div>
+                </a>
+
+                <a href="" title="Youtube TV">
+                    <div class="boton-lateral">
+                        <img src="iconos/youtubeTV.png" alt="Youtube TV">
+                        <p>Youtube TV</p>
+                    </div>
+                </a>
+
+                <div>
+                    <hr>
+                </div>
+
+                <a href="" title="Configuración">
+                    <div class="boton-lateral">
+                        <img src="iconos/configuracion.png" alt="Configuración">
+                        <p>Configuración</p>
+                    </div>
+                </a>
+
+                <a href="" title="Historial de denuncias">
+                    <div class="boton-lateral">
+                        <img src="iconos/historialDeDenuncias.png" alt="Historial de denuncias">
+                        <p>Historial de denuncias</p>
+                    </div>
+                </a>
+
+                <a href="" title="Ayuda">
+                    <div class="boton-lateral">
+                        <img src="iconos/ayuda.png" alt="Ayuda">
+                        <p>Ayuda</p>
+                    </div>
+                </a>
+
+                <a href="" title="Enviar sugerencias">
+                    <div class="boton-lateral">
+                        <img src="iconos/enviarSugerencias.png" alt="Enviar sugerencias">
+                        <p>Enviar sugerencias</p>
+                    </div>
+                </a>
+
+                <div>
+                    <hr>
+                </div>
+
+                <!-- Links -->
+
+                <div class="links">
+                    <a href="">Información</a>
+                    <a href="">Prensa</a>
+                    <a href="">Derechos de autor</a>
+                    <a href="">Contactar</a>
+                    <a href="">Creadores</a>
+                    <a href="">Publicidad</a>
+                    <a href="">Desarrolladores</a>
+                </div>
+
+                <div class="links">
+                    <a href="">Términos</a>
+                    <a href="">Privacidad</a><br>
+                    <a href="">Política y seguridad</a><br>
+                    <a href="">Cómo funciona YouTube</a><br>
+                    <a href="">Probar funciones nuevas</a>
+                </div>
+
+                <div class="firma">
+                    © 2023 Victor Bellera
+                </div>
+
+    </aside>
+
+
+
+    <!-- Barra de Recomendados -->
+    <section id="recomendados">
+        <a href="" title="Todo">
+            <div id="todo">Todo</div>
+        </a>
+        <a href="" title="Programación">
+            <div>Programación</div>
+        </a>
+        <a href="" title="Rock">
+            <div>Rock</div>
+        </a>
+        <a href="" title="Grunge">
+            <div>Grunge</div>
+        </a>
+        <a href="" title="Anime">
+            <div>Anime</div>
+        </a>
+        <a href="" title="One Piece">
+            <div>One Piece</div>
+        </a>
+        <a href="" title="Anime">
+            <div>Anime</div>
+        </a>
+        <a href="" title="Videojuegos">
+            <div>Videojuegos</div>
+        </a>
+        <a href="" title="Música">
+            <div>Música</div>
+        </a>
+        <a href="" title="Lo-fi">
+            <div>Lo-fi</div>
+        </a>
+        <a href="" title="Hardware informático">
+            <div>Hardware informático</div>
+        </a>
+        <a href="" title="Mixes">
+            <div>Mixes</div>
+        </a>
+        <a href="" title="Memes">
+            <div>Memes</div>
+        </a>
+        <a href="" title="Herramientas">
+            <div>Herramientas</div>
+        </a>
+        <a href="" title="Podcast">
+            <div>Podcast</div>
+        </a>
+        <a href="" title="Ediciones">
+            <div>Ediciones</div>
+        </a>
+        <a href="" title="Javascript">
+            <div>Javascript</div>
+        </a>
+        <div id="siguiente">
+            <a href="" title="Siguiente">
+                <img src="iconos/flechaDerecha.png" alt="Menu">
+            </a>
+        </div>
+    </section>
+
+    <!-- Bloque Principal -->
+    <main>
+        <!-- Cuadricula de videos -->
+
+        <!-- Seccion 1 Videos -->
+        <section class="videos">
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=snDFmiV-CRQ&t=4s">
+                    <div class="imagen-video">
+                        <img src="videos/video1.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil1.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">Tukki Bailando boleta - Danza De La Lluvia</p>
+                            </div>
+                            <a class="nombre-canal" href="">José_Caballero</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    138.922 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 6 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=qmlabKbpTGM">
+                    <div class="imagen-video">
+                        <img src="videos/video2.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil2.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">I used a Linux phone for 30 days</p>
+                            </div>
+                            <a class="nombre-canal" href="">TechHut</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    307.066 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 2 meses
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=jvaSmi1Dgkc&t=23s">
+                    <div class="imagen-video">
+                        <img src="videos/video3.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil3.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">Why I got fired from my first two jr. developer jobs - Life after
+                                    a coding bootcamp</p>
+                            </div>
+                            <a class="nombre-canal" href="">Joe Webb</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    85.367 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 2 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=nztnoaw2pwU">
+                    <div class="imagen-video">
+                        <img src="videos/video4.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil4.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">Recopilación de hola soy victor</p>
+                            </div>
+                            <a class="nombre-canal" href="">Binjapan</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    15.796 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 2 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=vOLwrxNKpsc">
+                    <div class="imagen-video">
+                        <img src="videos/video5.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil5.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">el que se quedo pegao se quedo pegao!!</p>
+                            </div>
+                            <a class="nombre-canal" href="">jose arkangel</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    113.009 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 6 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=KmiRwtTaucg">
+                    <div class="imagen-video">
+                        <img src="videos/video6.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil6.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">La Vieja de los Mangos y la Cerca</p>
+                            </div>
+                            <a class="nombre-canal" href="">carmendariabracho</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    593.164 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 14 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=q-t4ylsgy6w">
+                    <div class="imagen-video">
+                        <img src="videos/video7.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil7.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">DRAGON BALL Z MARACUCHO BUENA VERSION</p>
+                            </div>
+                            <a class="nombre-canal" href="">Jose Berrios</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    662.835 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 14 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=VEpkBiBYUvY">
+                    <div class="imagen-video">
+                        <img src="videos/video8.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil8.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">BULDA E' PASAO</p>
+                            </div>
+                            <a class="nombre-canal" href="">alejandro fajardo</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    20.398 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 8 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <div class="divisor"></div>
+
+        <!-- Seccion 2 Videos -->
+        <section class="videos">
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=nztnoaw2pwU">
+                    <div class="imagen-video">
+                        <img src="videos/video4.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil4.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">Recopilación de hola soy victor</p>
+                            </div>
+                            <a class="nombre-canal" href="">Binjapan</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    15.796 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 2 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=qmlabKbpTGM">
+                    <div class="imagen-video">
+                        <img src="videos/video2.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil2.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">I used a Linux phone for 30 days</p>
+                            </div>
+                            <a class="nombre-canal" href="">TechHut</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    307.066 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 2 meses
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=VEpkBiBYUvY">
+                    <div class="imagen-video">
+                        <img src="videos/video8.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil8.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">BULDA E' PASAO</p>
+                            </div>
+                            <a class="nombre-canal" href="">alejandro fajardo</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    20.398 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 8 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=KmiRwtTaucg">
+                    <div class="imagen-video">
+                        <img src="videos/video6.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil6.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">La Vieja de los Mangos y la Cerca</p>
+                            </div>
+                            <a class="nombre-canal" href="">carmendariabracho</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    593.164 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 14 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=jvaSmi1Dgkc&t=23s">
+                    <div class="imagen-video">
+                        <img src="videos/video3.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil3.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">Why I got fired from my first two jr. developer jobs - Life after
+                                    a coding bootcamp</p>
+                            </div>
+                            <a class="nombre-canal" href="">Joe Webb</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    85.367 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 2 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=snDFmiV-CRQ&t=4s">
+                    <div class="imagen-video">
+                        <img src="videos/video1.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil1.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">Tukki Bailando boleta - Danza De La Lluvia</p>
+                            </div>
+                            <a class="nombre-canal" href="">José_Caballero</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    138.922 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 6 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=vOLwrxNKpsc">
+                    <div class="imagen-video">
+                        <img src="videos/video5.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil5.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">el que se quedo pegao se quedo pegao!!</p>
+                            </div>
+                            <a class="nombre-canal" href="">jose arkangel</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    113.009 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 6 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=q-t4ylsgy6w">
+                    <div class="imagen-video">
+                        <img src="videos/video7.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil7.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">DRAGON BALL Z MARACUCHO BUENA VERSION</p>
+                            </div>
+                            <a class="nombre-canal" href="">Jose Berrios</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    662.835 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 14 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <div class="divisor"></div>
+
+        <!-- Seccion 3 Videos -->
+        <section class="videos">
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=snDFmiV-CRQ&t=4s">
+                    <div class="imagen-video">
+                        <img src="videos/video1.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil1.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">Tukki Bailando boleta - Danza De La Lluvia</p>
+                            </div>
+                            <a class="nombre-canal" href="">José_Caballero</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    138.922 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 6 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=qmlabKbpTGM">
+                    <div class="imagen-video">
+                        <img src="videos/video2.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil2.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">I used a Linux phone for 30 days</p>
+                            </div>
+                            <a class="nombre-canal" href="">TechHut</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    307.066 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 2 meses
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=jvaSmi1Dgkc&t=23s">
+                    <div class="imagen-video">
+                        <img src="videos/video3.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil3.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">Why I got fired from my first two jr. developer jobs - Life after
+                                    a coding bootcamp</p>
+                            </div>
+                            <a class="nombre-canal" href="">Joe Webb</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    85.367 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 2 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=nztnoaw2pwU">
+                    <div class="imagen-video">
+                        <img src="videos/video4.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil4.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">Recopilación de hola soy victor</p>
+                            </div>
+                            <a class="nombre-canal" href="">Binjapan</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    15.796 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 2 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=vOLwrxNKpsc">
+                    <div class="imagen-video">
+                        <img src="videos/video5.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil5.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">el que se quedo pegao se quedo pegao!!</p>
+                            </div>
+                            <a class="nombre-canal" href="">jose arkangel</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    113.009 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 6 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=KmiRwtTaucg">
+                    <div class="imagen-video">
+                        <img src="videos/video6.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil6.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">La Vieja de los Mangos y la Cerca</p>
+                            </div>
+                            <a class="nombre-canal" href="">carmendariabracho</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    593.164 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 14 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=q-t4ylsgy6w">
+                    <div class="imagen-video">
+                        <img src="videos/video7.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil7.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">DRAGON BALL Z MARACUCHO BUENA VERSION</p>
+                            </div>
+                            <a class="nombre-canal" href="">Jose Berrios</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    662.835 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 14 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contenedor-video">
+                <a href="https://www.youtube.com/watch?v=VEpkBiBYUvY">
+                    <div class="imagen-video">
+                        <img src="videos/video8.png" alt="Imagen de Video">
+                    </div>
+
+                    <div class="detalles-video">
+                        <div class="perfil-canal">
+                            <img src="iconos/perfiles/perfil8.jpg" alt="Perfil Canal">
+                        </div>
+
+                        <div class="info-video">
+                            <div class="titulo-video">
+                                <p class="line-clamp">BULDA E' PASAO</p>
+                            </div>
+                            <a class="nombre-canal" href="">alejandro fajardo</a>
+
+                            <div class="metadata">
+                                <span class="visitas">
+                                    20.398 visitas
+                                </span>
+                                <span>&#x2022;</span>
+                                <span class="tiempo-subida">
+                                    hace 8 años
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
