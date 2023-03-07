@@ -227,11 +227,23 @@ nav {
     border: none;
 }
 
-div#todo {
+/*div#todo {
+    margin-left: 24px;
+    background-color: #f1f1f1;
+    color: black;
+}*/
+
+#recomendados a:first-child div {
     margin-left: 24px;
     background-color: #f1f1f1;
     color: black;
 }
+
+/*#recomendados a:nth-of-type(1) div {
+    margin-left: 24px;
+    background-color: #f1f1f1;
+    color: black;
+} ESTO HACE LO MISMO QUE EL DE ARRIBA*/
 
 #recomendados div:hover {
     background-color: #3f3f3f;
@@ -302,6 +314,8 @@ aside .boton-lateral {
     text-overflow: ellipsis;
 }
 
+
+
 aside .boton-lateral.activo {
     background-color: #222;
     font-weight: 500;
@@ -311,6 +325,25 @@ aside .boton-lateral img {
     width: 24px;
     height: 24px;
     margin-right: 24px;
+}
+
+.perfil-suscripcion {
+    padding: 0;
+    overflow: hidden;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.perfil-suscripcion + p {
+    max-width: 64%;
+}
+
+.online {
+    color: #4a92f0;
+    font-size: 18px;
+    margin-left: auto;
 }
 
 aside .boton-lateral:hover {
@@ -414,6 +447,7 @@ main {
 
 .titulo-video {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -427,6 +461,12 @@ main {
     overflow: hidden;
     max-height: 44px;
     color: #f1f1f1;
+}
+
+.opcion-video img{
+    width: 24px;
+    height: 24px;
+    visibility: hidden;
 }
 
 .line-clamp {
@@ -467,6 +507,10 @@ main {
 .contenedor-video:hover .detalles-video {
     transform: scale(95%);
     transition: transform 0.3s;
+}
+
+.contenedor-video:hover .opcion-video img{
+    visibility: visible;
 }
 
 /* Barra de scroll*/
