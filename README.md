@@ -1,2 +1,2 @@
 # proyectoYoutube
-Proyecto YouTube para Curso Desarrollo FullStack
+Clon de YouTube (solo visual) usando HTML/Css para Curso Desarrollo FullStack
